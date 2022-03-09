@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <title>Etiquetas HTLM&CSS</title>
+</head>
+<body class="container">
+
+  <div id="imagen">
+    <img src="/media/htmlycss.jpg" alt="No picture">
+  </div>
+
+  <div>
+    <h1>ETIQUETAS DE HTML&CSS</h1>
+  </div>
+
+  <div>
+    <h2>TABLAS EN HTML</h2>
+      <p>Este tutorial presenta el concepto de tabla y analiza su estructura y algunas de sus propiedades más básicas. Se enfoca escencialmente en aquellos aspectos de las tables que se utilizan regularmente en el desarrollo de documentos.</p>
+  </div>
+
+  <div>
+    <h2>CONCEPTO</h2>
+  </div>
+  
+  <div>
+    <article>
+      <p>Una tabla no es otra cosa más que un medio de organizar datos en filas y columnas. Este concepto ha estado presente en nuestra sociedad por un largo período de tiempo y ha sido adoptado por HTML en sus etapas iniciales, como una forma de transmitir información que, de otro modo, no sería comprendida tan fácilmente.</p>
+      <p>En documentos HTML una tabla puede ser considerada, resumidamente, como un grupo de filas donde cada una contiene a un grupo de celdas. Esto es conceptualmente distinto a un grupo de columnas que contiene a un grupo de filas, y esta diferencia tendrá un impacto en la composición y comportamiento de la tabla.</p>
+      <p>Como muchas otras estructuras de HTML, las tablas son construidas utilizando elementos. En particular, una tabla básica puede ser declarada usando tres elementos, a saber, &lt;table&gt; (el contenedor principal), &lt;tr&gt; (representando a las filas contenedoras de las celdas) y &lt;td&gt; representando a las celdas). Dejémoslo más claro con un ejemplo:</p>
+  </article>
+  </div>
+
+  <div class="table">
+    <ol>
+      <li>&lt;table class="default"&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Celda 1&lt;/td&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Celda 2&lt;/td&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Celda 3&lt;td&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Celda 4&lt;/td&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Celda 5&lt;/td&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Celda 6&lt;/td&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</li>
+      <li>&lt;/table&gt;</li>
+    </ol>
+  </div>
+
+  <div>
+    <table class="default">
+        <tr class="default">
+          <td class="default">Celda 1</td>
+          <td class="default">Celda 2</td>
+          <td class="default">Celda 3</td>
+        </tr>
+        <tr class="default">
+          <td class="default">Celda 4</td>
+          <td class="default">Celda 5</td>
+          <td class="default">Celda 6</td>
+        </tr>
+    </table>
+  </div>
+  
+    <article>
+      <p>Ten en cuenta que a esta tabla se le han aplicado estilos mediante CSS para mejorar su comprensión y legibilidad. No se deberían esperar estos resultados en tablas sin atributos presentacionales asignados</p>
+      <p>Puedes ver claramente en el ejemplo anterior, el concepto de filas conteniendo columnas del que hablamos previamente. Aquí se hace evidente como las celdas, que han sido numeradas de acuerdo a su aparición en el código, siguen una secuencia en la representación que va de izquierda a derecha, una fila por vez. Esto tendrá implicaciones futuras, especialmente cuando se trate el tema de unificación de celdas y agrupamiento.</p>
+    </article>
+
+    <h2>CELDAS DE ENCABEZADOS</h2>
+
+    <article>
+    <p>Ahora que ya hemos tratado la estructura básica de una tabla, es hora de comenzar a crear tablas más útiles.</p>
+    <p>Una celda de encabezado es un tipo especial de celda utilizada para organizar y categorizar otras celdas en la tabla. Dicho esto, es diícil imaginar una tabla donde una celda de encabezado no tenga utilidad. Casi cualquier tabla puede beneficiarse de un grupo de celdas de encabezado bien ubicado.</p>
+    <p>En el siguiente ejemplo, construiremos una tabla para mostrar información acerca del clima en los próximos días. Aquí, las celdas de encabezado, representadas por el elemento &lt;th&gt;, son ubicadas en la primera fila de la tabla, encima de las celdas comunes.</p>
+    </article>
+
+  <div class="table">
+    <ol>
+      <li>&lt;table class="default"&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Hoy&lt;/th&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Mañana&lt;/th&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Viernes&lt;/th&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Soleado&lt;/td&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Mayormente Soleado&lt;/td&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Parcialmente Nublado&lt;/td&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;19ºC&lt;/td&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;17ºC&lt;/td&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;12ºC&lt;/td&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;E 13 km/h&lt;/td&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;E 11 km/k&lt;/td&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;S 16 km/h&lt;/td&gt;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</li>
+      <li>&lt;/table&gt;</li>
+    </ol>
+  </div>
+  
+  <table class="default">
+    <tr class="default">
+      <th class="default">Hoy</th>
+      <th class="default">Mañana</th>
+      <th class="default">Viernes</th>
+    </tr>
+    <tr class="default">
+      <td class="default">Soleado</td>
+      <td class="default">Mayormente Soleado</td>
+      <td class="default">Parcialmente Nublado</td>
+    </tr>
+    <tr class="default">
+      <td class="default">19ºC</td>
+      <td class="default">17ºC</td>
+      <td class="default">12ºC</td>
+    </tr>
+    <tr class="default">
+      <td class="default">E 13 km/h</td>
+      <td class="default">E 11 km/h</td>
+      <td class="default">S 16 km/h</td>
+    </tr>
+  </table>
+
+  <article>
+    <p>Es fácil ver aquí cómo cada celda de encabezado en la tabla, provee información para el resto de las celdas en la columna a la que pertenece. Algunos agentes, como los navegadores de voz, hacen el mismo análisis cuando deben informar al usuario qué celda de encabezado está asociada a una celda en particular. Pero en algunos casos, las ambigüedades necesitan ser evitadas y es por este motivo que HTML provee algunos atributos como scope.</p>
+  </article>
+  
+  <h2>EL ATRIBUTO SCOPE</h2>
+
+  <article>
+  <p>El atributo scope provee un mecanismo para indicar explícitamente a qué celdas afecta una celda de encabezado. Este atributo solo puede ser declarado en una celda de encabezado y tomar los valores "col", "row", "colgroup" y "rowgroup". Los valores "col" y "row" indican que la celda de encabezado provee información para el resto de las celdas en la columna o fila (respectivamente) en que está presente. Los otros dos valores tendrán sentido más adelante en este tutorial.</p>
+  <p>En el siguiente ejemplo, la tabla presentada anteriormente ha sido mejorada con más celdas de encabezado, con el fin de aumentar la legibilidad. Aquí, la celda en la esquina superior izquierda de la tabla, proveería información ambigua si el atributo scope no estuviera presente. En otras palabras, afectaría a las celdas en su columna, así como a las celdas en su fila. La presencia del atributo scope ha dejado en claro que las celdas afectadas por este encabezado son aquellas en la misma fila.</p>
+  </article>
+
+<div class="table">
+  <ol>
+    <li>&lt;table class="default"&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="row"&gt;Dia&lt;/th&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Hoy&lt;/th&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Mañana&lt;/th&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Viernes&lt;/th&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Condicion&lt;/th&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Soleado&lt;/td&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Mayormente Soleado&lt;/td&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Parcialmente Nublado&lt;/td&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Temperatura&lt;/th&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;19ºC&lt;/td&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;17ºC&lt;/td&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;12ºC&lt;/td&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Vientos&lt;/th&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;E 13 km/h&lt;/td&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;E 11 km/k&lt;/td&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;S 16 km/h&lt;/td&gt;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;</li>
+    <li>&lt;/table&gt;</li>
+  </ol>
+</div>
+
+  <table class="default">
+    <tr class="default">
+      <th class="default" scope="row">Día</th>
+      <th class="default">Hoy</th>
+      <th class="default">Mañana</th>
+      <th class="default">Viernes</th>
+    </tr>
+    <tr class="default">
+      <th class="default">Condición</th>
+      <td class="default">Soleado</td>
+      <td class="default">Mayormente soleado</td>
+      <td class="default">Parcialmente nublado</td>
+    </tr>
+    <tr class="default">
+      <th class="default">Temperatura</th>
+      <td class="default">19°C</td>
+      <td class="default">17°C</td>
+      <td class="default">12°C</td>
+    </tr>
+    <tr class="default">
+      <th class="default">Vientos</th>
+      <td class="default">E 13 km/h</td>
+      <td class="default">E 11 km/h</td>
+      <td class="default">S 16 km/h</td>
+    </tr>
+  </table>
+
+  <div>
+
+    <div>
+      <h1>HOJAS DE ESTILO EN <br>CASCADA (CSS)</h1>
+      <p>Este tutorial está pensado para presentar el concepto y la utilización básica de CSS. En sus páginas, intentaré cubrir los aspectos básicos de las hojas de estilo, lo que te permitirá continuar aprendiendo con recursos más específicos.</p>
+    </div>
+
+    <div>
+      <h2>CONCEPTO</h2>
+      <p>CSS es un estándar diseñado principalmente para separar los atributos presentacionales (como el color de fondo, el tamaño de la fuente o la sangría) del contenido. Aunque éste puede trabajar con muchos tipos de documentos, es mayormente utilizado como una forma de proveer información presentacional en páginas web.</p>
+      <p>La separación entre contenido y presentación mejora la flexibilidad, permitiendo a los autores definir un único conjunto de estilos que miles de documentos utilizarán, reduciendo así el tiempo y trabajo que se debe invertir en cada actualización. Asimismo, la implementación de CSS permite a un documento ser exclusivamente semántico, al liberarlo de la necesidad de usar elementos presentacionales.</p>
+    </div>
+
+    <div>
+      <h2>DECLARACIONES PROPIEDADES Y VALORES</h2>
+      <p>La declaración es la unidad básica de CSS, lo que significa que no puedes usar nada más pequeño que esto en tus documentos. Una declaración consiste, básicamente, en la asignación de un valor a una propiedad.</p>
+      <p>En otras palabras, una declaración es la respuesta a una pregunta. ¿Qué tan ancho debería ser esta tabla? ¿Cuán grueso este borde? ¿De qué color debería ser este fondo? ¿Qué tan grande la fuente en este párrafo? Y es exactamente así cómo defines el aspecto de tu documento: estableciendo declaraciones, una para cada propiedad que necesitas definir.</p>
+      <p>Pero CSS tiene un formato específico que debe seguir toda declaración. Éste consiste en el nombre de la propiedad seguido de dos puntos (":") y el valor que le será asignado. Cuando se provee más de una declaración en el mismo bloque, cada declaración debe ser separada de su próxima por un punto y coma (";"). Este es el motivo por el cual los autores normalmente usan un punto y coma al final de cada declaración, independientemente de la presencia de declaraciones siguientes. El próximo esquema describe las partes de una declaración CSS.</p>
+    </div>
+
+    <div>
+      <p>En el siguiente ejemplo, un conjunto de declaraciones son presentadas utilizando este formato. Aquí un quiebre de línea adicional es agregado al final de cada declaración, a fin de mejorar la legibilidad.</p>
+      <ol>
+        <li>background-color: green;</li>
+        <li>font-size: 16px;</li>
+        <li>margin-top: 40;</li>
+        <li>font-weight: bold;</li>
+      </ol>
+    </div>
+
+    <div>
+      <h2>SELECTORES</h2>
+      <p>Con lo visto hasta el momento podemos construir declaraciones, pero ¿cómo indicamos qué elementos en el documento deben ser afectados por éstas? Aquí es donde los selectores CSS entran en la escena. Un selector es el medio para hacer una referencia a un grupo de uno o más elementos HTML, con el fin de aplicar a éste un conjunto de declaraciones CSS.</p>
+      <p>Existe una estructura con la que debes cumplir para usar un selector y está compuesta por el selector seguido del conjunto de declaraciones encerradas por llaves ("{}"). El siguiente ejemplo, en el cual espacios y quiebres de línea han sido agregados para mejorar la legibilidad, refleja esta estructura.</p>
+      <ol>
+        <li>[selector] {</li>
+        <li>&nbsp;&nbsp;background-color: green;</li>
+        <li>&nbsp;&nbsp;font-size: 16px;</li>
+        <li>&nbsp;&nbsp;margin-top: 40px;</li>
+        <li>&nbsp;&nbsp;font-weight: bold;</li>
+        <li>}</li>
+      </ol>
+      <p>Existe un amplio conjunto de selectores disponibles, lo que se traduce en una flexibilidad excepcional para la manipulación de propiedades. En las secciones siguientes, veremos algunos de los selectores más básicos, ya que éstos presentarán las ideas sobre las cuales otros selectores se constituirán.</p>
+    </div>
+
+    <div>
+      <h2>EL SELECTOR UNIVERSAL</h2>
+      <p>El selector universal se corresponde con todos los elementos en el documento. Éste es como una especie de comodín que tiene más sentido al ser usado en combinaciones. El siguiente código establece un par de propiedades para todos los elementos en el documento.</p>
+      <ol>
+        <li>* {</li>
+        <li>&nbsp;&nbsp;font-size: 1.5em;</li>
+        <li>&nbsp;&nbsp;color: #444;</li>
+        <li>}</li>
+      </ol>
+    </div>
+
+    <div>
+      <h2>SELECTORES DE TIPO</h2>
+      <p>El selector de tipo se corresponde con todos los elementos en el documento que tienen el tipo especificado. Con este selector puedes aplicar declaraciones a, por ejemplo, todos los párrafos (elementos p), todos los ítems de listas (elemento li) o todos los vínculos (elementos a) de un documento. El siguiente ejemplo provee declaraciones para todas las listas ordenadas (elementos ol) del documento.</p>
+      <ol>
+        <li>ol {</li>
+        <li>&nbsp;&nbsp;margin-left: 0;</li>
+        <li>&nbsp;&nbsp;padding-left: 2em;</li>
+        <li>}</li>
+      </ol>
+    </div>
+
+    <div>
+      <h2>SELECTORES DE ID</h2>
+      <p>El selector de ID se corresponde con todos los elementos que tienen el valor especificado en su atributo id. Como, por definición, los valores de id deben ser únicos, este selector puede afectar sólo a un elemento en el documento. En su declaración, el ID especificado debe estar precedido por el signo numeral ("#").</p>
+      <p>El siguiente ejemplo muestra un conjunto de declaraciones que están siendo aplicadas a un elemento que tiene el valor "titulo1" en el atributo id.</p>
+      <ol>
+        <li>#titulo1 {</li>
+        <li>&nbsp;&nbsp;font-size: 4em;</li>
+        <li>&nbsp;&nbsp;color: blue;</li>
+        <li>&nbsp;&nbsp;text-decoration: underline;</li>
+        <li>}</li>
+      </ol>
+      <p>Para dejarlo absolutamente en claro, las declaraciones anteriores afectarían a un elemento como el siguiente.</p>
+      <ol>
+        <li>&lt;h1 id="titulo1"&gt;Abrazando las posibilidades&lt;/h1&gt;</li>
+      </ol>
+    </div>
+
+    <div>
+      <h2>SELECTORES DE CLASE</h2>
+      <p>Una clase es un concepto introducido por CSS con el propósito de agrupar declaraciones y aplicarlas a un conjunto personalizado de elementos, independientemente de su tipo o naturaleza. Desde otro punto de vista, una clase es una o más declaraciones CSS, agrupadas bajo un nombre que los elementos pueden utilizar para acceder a sus definiciones y ser afectados por ellas.</p>
+      <p>Dicho esto, un selector de clase aplica un conjunto de delcaraciones a todos los elementos que tienen el nombre de clase especificado en su atributo class. En su construcción, un punto (".") debe preceder al nombre de la clase. El siguiente ejemplo muestra un conjunto de declaraciones para la clase llamada "importante".</p>
+      <ol>
+        <li>.importante {</li>
+        <li>font-size: 1.2em;</li>
+        <li>font-weight: bold;</li>
+        <li>color: red;</li>
+        <li>}</li>
+      </ol>
+      <p>Y estas declaraciones afectarían a elementos como los siguientes.</p>
+      <ol>
+        <li>&lt;h3 class="importante"&gt;Cuidado&lt;/h3&gt;</li>
+        <li>&lt;p class="importante"&gt;No abra la escotilla durante viajes interestelares!&lt;/p&gt;</li>
+      </ol>
+    </div>
+
+    <div>
+      <h2>SELECTORES AVANZADOS</h2>
+      <p>CSS permite realizar combinaciones con los cuatro selectores básicos descriptos arriba, haciendo referencia a las relaciones entre padres, hijos, hermanos, descendientes y más. Con algunas de estas herramientas podrías, por ejemplo, aplicar declaraciones a todos los párrafos que son hijos directos del cuerpo &lt;body&gt;. Además, provee otros selectores basados en la composicón de los atributos o los estados que un elemento presenta, permitiendo a los autores aplicar declaraciones a, por ejemplo, todos los elementos &lt;input&gt; que son de tipo "radio" (atributo type).</p>
+      <p>A pesar de que algunos de los más nuevos son pobremente soportados, estos selectores avanzados son extremadamente útiles en el desarrollo de sitios web complejos. Sin embargo, no serán tratados en este tutorial debido a su acance. Esta sección es meramente informativa.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>By Kal 2022</p>
+  </footer>
+</body>
+</html>
